@@ -5,15 +5,10 @@ import socket
 import re
 import time
 import platform
-import base64
 import json
 import requests
-from cryptography.fernet import Fernet
 from dns import reversename, resolver
 from colored import fg, bg, attr
-from cryptography.hazmat.backends import default_backend
-from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 def clear():
     if platform.system() == "Linux":
